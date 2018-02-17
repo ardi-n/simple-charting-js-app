@@ -1,0 +1,41 @@
+{
+  "name": "simple-charting-js-app",
+  "version": "1.0.0",
+  "description": "An example JS app showing integration of Backbone/Marionette with d3.js where the chart data is partly fetched from the server and adjusted in real time thanks to some controls.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "start-server": "node ./bin/www",
+    "build": "parcel public/index.js -d public/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardi-n/simple-charting-js-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ardi-n/simple-charting-js-app/issues"
+  },
+  "homepage": "https://github.com/ardi-n/simple-charting-js-app#readme",
+  "dependencies": {
+    "autoprefixer": "^8.0.0",
+    "babel-preset-env": "^1.6.1",
+    "backbone": "^1.3.3",
+    "backbone.marionette": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "cookie-parser": "~1.4.3",
+    "d3": "^4.13.0",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "popper.js": "^1.12.9",
+    "serve-favicon": "~2.4.5",
+    "underscore": "^1.8.3"
+  }
+}

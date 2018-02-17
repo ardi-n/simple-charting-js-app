@@ -1,0 +1,57 @@
+body {
+  background: #f6f5f5;
+}
+
+.app-panel {
+  padding: 20px 30px;
+  margin: 20px 0;
+  background: #e0e0e0;
+}
+
+.form-group-forecast-value {
+  padding-top: 50px;
+}
+
+.form-group-forecast-value input {
+  width: 100%;
+}
+
+.form-group-timeframe {
+  padding-top: 10px;
+}
+
+.line1 {
+  fill: none;
+  stroke: darkblue;
+  stroke-width: 4px;
+}
+
+.line2 {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.currentline {
+  fill: none;
+  stroke: yellow;
+  stroke-width: 4px;
+}
+
+.area1 {
+  fill: rgb(180, 183, 187);
+  fill-opacity: 0.6;
+}
+
+.area2 {
+  fill: rgb(8, 202, 228);
+  fill-opacity: 0.6;
+}
+
+.tick line, .domain {
+  stroke: rgb(192, 192, 192);
+}
+
+.tick text {
+  fill: rgb(192, 192, 192);
+}
