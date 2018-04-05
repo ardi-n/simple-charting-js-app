@@ -1,5 +1,7 @@
 # simple-charting-js-app
 
+## [Live Example](https://ardi-n.github.io/simple-charting-js-app/public/index.html)
+
 An example JS app showing integration of Backbone/Marionette with d3.js where the chart data is partly fetched from the server and adjusted in real time thanks to some controls.
 
 There are two components that form a larger panel. The component on top integrates some dynamic information (current date) and some high level configuration inputs. Here a user can view the current date and select a visualization period (3, 6, 12 months) for her data. She can also choose one of two models of growth (linear or exponential). If she chooses exponential she gets an extra input field where she is prompted for a multiplier ratio (e.g. 1.5x).
