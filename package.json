@@ -4,9 +4,9 @@
   "description": "An example JS app showing integration of Backbone/Marionette with d3.js where the chart data is partly fetched from the server and adjusted in real time thanks to some controls.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel public/index.html",
-    "start-server": "node ./bin/www",
-    "build": "parcel public/index.js -d public/dist"
+    "start": "parcel public/index.html -d public/dist",
+    "start-server": "npm run build && node ./bin/www",
+    "build": "parcel build public/index.js -d public/dist"
   },
   "repository": {
     "type": "git",
@@ -37,5 +37,8 @@
     "popper.js": "^1.12.9",
     "serve-favicon": "~2.4.5",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.7.0"
   }
 }

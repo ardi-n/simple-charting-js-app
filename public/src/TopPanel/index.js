@@ -11,7 +11,7 @@ const Manager = Mn.Object.extend({
     'view': 'getView'
   },
 
-  getView(model) {console.log('getView', model);
+  getView(model) {
     const currentDateV = new CurrentDateView({ model });
     const forecastPeriodV = new ForecastPeriodView({ model });
     const growthV = new GrowthView({ model });

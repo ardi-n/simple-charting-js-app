@@ -13,7 +13,7 @@ export default Mn.Application.extend({
   },
 
   onStart() {
-    this.chartModel.fetch();
+    this.chartModel.fetchForecast();
     const topV = Radio.request('top-panel', 'view', this.chartModel);
     const bottomV = Radio.request('bottom-panel', 'view', this.chartModel);
     const v = new RootView();

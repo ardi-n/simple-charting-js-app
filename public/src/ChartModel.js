@@ -1,5 +1,6 @@
 import _ from 'underscore';
 import Bb from 'backbone';
+import { generateForecast } from './utils';
 
 export default Bb.Model.extend({
   urlRoot: '/predict',
@@ -69,8 +70,18 @@ export default Bb.Model.extend({
 
   onChangeForecastMonths() {
     // request
-    this.fetch({ url: this.url() + '?forecast_months=' + this.get('forecast_months') })
-      .then(() => this.updateForecast());
+    this.fetchForecast();
+  },
+
+  fetchForecast() {
+    return this.fetch({ url: this.url() + '?forecast_months=' + this.get('forecast_months') })
+      .then(
+        () => this.updateForecast(), 
+        xhr => {
+          console.error('Fetch failed. Generating forecast in the client.');
+          this.set(this.parse(generateForecast(this.get('forecast_months'))));
+        }
+      );
   },
 
   updateForecast() {
